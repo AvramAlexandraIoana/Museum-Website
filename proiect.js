@@ -40,6 +40,7 @@ else
 
 window.onload=function()
 {
+	
 	var pa=document.createElement("p");
 	pa.innerHTML="GATA?";
 	pa.id="inceput";
@@ -100,6 +101,9 @@ window.onload=function()
 		var lab_radio,linie_noua;
 		linie_noua=document.createElement("br");
 		document.getElementById("fo").appendChild(linie_noua);
+		var pa=document.createElement("p");
+		pa.innerHTML="Culoare podea:";
+		document.getElementById("fo").appendChild(pa);
 	    var culori=["Moccasin","Linen","Khaki","PapayaWhip"];
 		for(var i=0;i<culori.length;i++)
 		{
@@ -240,6 +244,9 @@ window.onload=function()
 	  {
 		  var linie_noua=document.createElement("br");
 		  document.getElementById("fo").appendChild(linie_noua);
+		  var pa=document.createElement("p");
+		  pa.innerHTML="Marcheaza un colt";
+		  document.getElementById("fo").appendChild(pa);
 		  var texta=document.createElement("textarea");
 		  texta.id="te";
 		  document.getElementById("fo").appendChild(texta);
