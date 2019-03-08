@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link rel="stylesheet" type="text/css" href="Expozitie_temporara.css"/>
+	<link rel="stylesheet" type="text/css" href="Pagina_start.css"/>
+	<link type="text/css" href="Preturi.css" rel="stylesheet" media="screen and (max-width:650px)"/>
+	<link  rel="stylesheet" type="text/css" href="Preturi1.css">
+		<title>Preţuri</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="autor" content="Avram Ioana-Alexandra">
+		<meta name="keywords" content="Program,elev,adult,expoziţii,contact">
+		<meta name="description" content="Pagina de preţuri a site-ului care conţine informaţii despre taxe,bilete de intrare">
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+</head>
+<body>
+ <header>
+	   <nav class="drop-down">
+			<ul class="menu">
+				<li>
+					<a href="Pagina_start.html">Principal</a>
+					<ul class="submenu">
+						<li><a href="Istoric.html">Istoric</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>Expoziţii</a>
+					<ul class="submenu">
+						<li><a href="Expozitie_permanenta.html">Permanentă</a></li>
+						<li><a href="Expozitie_temporara.html">Temporară</a></li>
+					</ul>
+				</li>
+				<li><a href="Galerie.html">Galerie</a></li>
+				<li><a href="Preturi.html">Preţuri</a></li>
+				 <li><a href="Proiect.html">Aplicatie</a></li>
+			</ul>
+	   </nav>
+   </header>
+   <p id="preturi">Preţuri</p>
+   <p id="nume">Biletele in luna noiembrie vor beneficia de o reducere pentru cupluri,dupa cum urmează:</p>
+   <math xmlns="http://www.w3.org/1998/Math/MathML" class="bilet">
+		<mrow>
+			<mi>pret final</mi>
+			<mo>=</mo>
+			<mfrac>
+				<mrow>
+					<mi>pret1</mi>
+					<mo>+</mo>
+					<mi>pret2</mi>
+				</mrow>
+				<mrow>
+					<mn>1.5</mn>
+				</mrow>
+			</mfrac>
+	    </mrow>
+   </math>
+   <!--
+   <svg class="plimba" width="300" height="100">
+  <switch>
+    <rect id="dreptunghi" x="10" y="10" width="50" height="20" stroke-width=3 stroke="red" fill="hsl(332,15%,88%)" />
+      <animate
+        xlink:href="#dreptunghi"
+        attributeName="x"
+        from="10"
+        to="200"
+        dur="2s"
+        repeatCount="4" />
+		 <foreignObject width="200" height="40">
+            <span class="eroare">Acest text se afiseaza doar daca browserul nu a implementat tagul svg.  </span>
+        </foreignObject>
+    </switch>   
+   </svg>-->
+   <table class="preturi">
+			<caption>Bilet</caption>
+			<thead>
+				<tr>
+					<th rowspan="2">Tip vizitator</th>
+					<th colspan="2">Zile</th>
+					<th rowspan="2">Preț</th>
+				</tr>
+				<tr>
+					<th>Perioada</th>
+					<th>Interval orar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="4">Student/Elev</td>
+					<td rowspan="2">Luni-Vineri</td>
+					<td>09:00-16:00</td>
+					<td>12 lei</td>
+				</tr>
+				<tr>
+					<td>17:00-21:00</td>
+					<td>15 lei</td>
+				</tr>
+				<tr>
+				   <td rowspan="2">Sâmbătă-Duminică</td>
+				   <td>09:00-15:00</td>
+				   <td>20 lei</td>
+				</tr>
+				<tr>
+				   <td>16:00-20:00</td>
+				   <td>25 lei</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Adulți</td>
+					<td>Luni-Vineri</td>
+					<td>09:00-20:00</td>
+					<td>25 lei</td>
+				</tr>
+				<tr>
+					<td>Sâmbătă-Duminică</td>
+					<td>10:00-21:00</td>
+					<td>30 lei</td>
+				</tr>
+				<tr>
+					<td>Pensionari</td>
+					<td>Luni-Duminică</td>
+					<td>10:00-21:00</td>
+					<td>10 lei</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4">Vă aşteptăm cu drag!</td>
+				</tr>
+			</tfoot>
+		</table>
+  <footer>
+        <p>Postat de:<strong>Avram Ioana-Alexandra</strong></p>
+        <address>Informaţii de contact:<a href="mailto:ioana-alexandra.avram@my.fmi.unibuc.ro">ioana-alexandra.avram@my.fmi.unibuc.ro</a>.</address>
+	    <p>&copy; Copyright 2018</p>
+	</footer>
+</body>
+</html>

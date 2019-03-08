@@ -1,0 +1,71 @@
+html
+{
+ font-size:16px;
+}
+*
+{
+   margin:0;
+   padding:0;
+}
+#expozitie
+{
+	position:relative;
+	top:120px;
+	font-size:2.3rem;
+	font-weight:bold;
+	
+}
+.grid-container
+{
+	position:relative;
+	top:130px;
+	display:grid;
+	grid-column-gap:5%;
+    grid-template-columns:40% 40%;
+	grid-template-rows:45% 45%;
+	padding:1%;
+}
+.grid-item
+{
+	border:1px solid black;
+	padding:2%;
+	font-size:1.5em;
+	text-align:center;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+img
+{
+	height:100%;
+	width:90%;
+}
+div p,aside
+{
+	text-align:left;
+	text-indent:10px;
+}
+.nume
+{
+	text-align:left;
+	text-indent:50px;
+}
+i
+{
+	color:gray;
+}
+@media screen and (min-width:400px) and (max-width:700px)
+{
+	.grid-container
+	{
+		grid-template-columns:45% 45%;
+		
+	}
+	.grid-item
+	{
+		font-size:1em;
+	}
+	img
+	{
+		width:100%;
+	}
+}

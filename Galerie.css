@@ -1,0 +1,128 @@
+html
+{
+	font-size:16px;
+	height:100%;
+}
+*
+{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+.spatiu
+{
+	margin-top:120px;
+}
+#galerie
+{
+	position:relative;
+	top:120px;
+	font-size:2.3rem;
+    font-weight:bold;
+	
+}
+div.content
+{
+    background-image:url('http://irinaciocan.ro/tehnici_web/imagini/fluture1a.png');
+    width:120px;
+    height:100px;
+    position:absolute;
+    left:200px;
+    top:80px;
+    animation-name:rotire;
+    animation-iteration-count:2;
+    animation-duration:5s;
+}
+div.in
+{
+    background-image:url('http://irinaciocan.ro/tehnici_web/imagini/fluture1b.png');
+	width:120px;
+    height:100px;
+    position:absolute;
+		 
+}
+@keyframes rotire 
+{
+	from 
+	{
+	transform: rotate(0deg) translateX(50px); 
+	}
+	to 
+	{
+	transform: rotate(360deg) translateX(50px); 
+	}
+}
+/*@-moz-keyframes rotire
+{
+	from
+	{
+	-moz-transform: rotate(0deg) translateX(50px);  
+	}
+	to   
+	{
+	-moz-transform: rotate(260deg) translateX(50px); 
+    }
+}*/
+.container
+{
+	position:relative;/*este pozitionat relativ fata de pozitia pe care ar fi avut-o initial in document. se folosesc left,top*/
+	margin-right:17px;
+	margin-top:150px;
+	margin-left:20px;
+	border:1px solid gray;
+	float:left;
+	width:22%;
+	height:480px;	
+}
+.image
+{
+	display:block;
+	width:100%;
+	height:380px;
+}
+.overlay
+{
+	position:absolute;/*este pozitionat intr-o pozitie relativa fata de primul parinte care are position*/
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	opacity:0;
+	transition:.5s ease;
+	background-color:rgb(17,175,185);
+}
+.container:hover .overlay/*selecteaza toate .overlay-urile care sunt descendenti ai container cand se face hover pe el*/
+{
+	opacity:1;
+}
+.text
+{
+	color:white;
+	font-size:2.5vh;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);/*muta un elemnet din pozitia lui curenta,stanga si sus*/
+}
+.desc
+{
+	font-family:Aerial,Helvetica,sans-serif;
+	color:rgb(40,142,131);
+	font-size:2vh;
+	padding:0.5%;
+	text-align:center;
+}
+@media screen and (min-width:400px) and (max-width:700px)
+{
+	.container
+	{
+		width:43.5%;
+		height:500px;
+	}
+	.desc
+	{
+		font-size:2.5vh;
+	}
+}

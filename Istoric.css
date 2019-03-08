@@ -1,0 +1,54 @@
+html
+{
+	font-size:16px;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+.in
+{
+	position:relative;
+	top:100px;
+}
+#text
+{
+	position:relative;
+	top:10px;
+	font-size:4rem;
+}
+#istoric
+{
+	position:relative;
+	top:150px;
+	font-weight:bold;
+}
+#muzeu
+{
+	position:relative;
+	top:20px;
+}
+#cladire,#muzeu
+{
+	color:gray;
+}
+.text
+{
+	text-indent:20px;
+	font-family:Aerial;
+	font-size:1.2rem;
+}
+#link
+{
+	position:relative;
+	top:250px;
+}
+@media screen and (min-width:400px) and (max-width:700px)
+{
+	img
+	{
+		height:200px;
+		width:80%;
+	}
+}

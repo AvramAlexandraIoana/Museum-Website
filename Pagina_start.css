@@ -1,0 +1,132 @@
+html,body
+{
+	font-size:16px;
+	height:100%;
+	font-family:Arial,Helvetica,sans-serif;
+}
+*
+{
+	margin:0%;
+	padding:0%;
+	text-indent:0%;/*identat cu prima linie*/
+	box-sizing:border-box; /*ca sa imi includa si paddingul in width;*/
+}
+#titlu
+{
+	font-size:3rem;
+}
+.bg
+{
+    background-image: url('https://images.pexels.com/photos/1059078/pexels-photo-1059078.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    height:100%; 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.column 
+{
+	position:relative;
+	top:120px;
+    float:left;
+    width:33.33%;
+	font-size:1.2rem;
+	font-weight:bold;
+    padding:15px;
+}
+.row:after 
+{
+    content:"";
+    display:table;
+    clear:both;
+}
+nav
+{
+	width:100%;
+	position:absolute;
+}
+address a
+{
+	color:white;
+	text-decoration:none;
+}
+footer
+{
+	height:3.6rem;
+	font-size:1.2rem;
+	line-height:1.2rem;
+	position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:black;
+	opacity:0.5;
+    color:white;
+    text-align:center;
+}
+ul
+{ 
+	list-style:none;
+}
+ul li
+{
+	float:left;
+	display:block;
+	height:2rem;
+	line-height:1.2rem;
+	font-size:1.5rem;
+	text-align:center;
+	background-color:black;
+	overflow:hidden;
+}
+ul.menu li
+{
+	width:20%;
+}
+ul.submenu li,ul.submenu1 li
+{
+	width:100%;
+}
+ul li a
+{
+	text-decoration:none;
+	display:block;
+	height:100%;
+    font-family:Aerial;
+	color:white;
+}
+ul li a:hover
+{
+	background-color:hsl(332,15%,88%);
+}
+ul li:hover
+{
+	overflow:visible;
+}
+@media screen and (min-width:400px) and (max-width:700px)
+{
+	
+	ul.menu>li
+	{
+	 width:20%;
+	}
+
+	footer
+	{
+		color:black;
+		font-size:3.5vw;
+		line-height:1.2rem;
+		background-color:gray;
+		opacity:0.5;
+	}
+	address a
+	{
+		color:black;
+	}
+}
+@media screen and (max-width:700px)
+{
+	.column
+	{
+		width:100%;
+	}
+}
